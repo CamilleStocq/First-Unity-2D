@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: f3a89dc4883894f49958cef71304cec8
+guid: a493d81e2377ddd40ab1e7a2e8381a16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2035777783790491695
-    second: spiny-spirtesheet_0
+      213: -2773065573728886917
+    second: luigi_0
+  - first:
+      213: 4577359851889802786
+    second: luigi_1
+  - first:
+      213: -8651142670417363386
+    second: luigi_2
+  - first:
+      213: -2756506821597662097
+    second: luigi_3
+  - first:
+      213: -6750832514236065215
+    second: luigi_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spiny-spirtesheet_0
+      name: luigi_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 25
-        height: 27
+        width: 16
+        height: 31
       alignment: 9
       pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +140,108 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d7298344e67fb3e0800000000000000
-      internalID: -2035777783790491695
+      spriteID: b7f56039d871489d0800000000000000
+      internalID: -2773065573728886917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spiny-spirtesheet_1
+      name: luigi_1
       rect:
         serializedVersion: 2
-        x: 25
+        x: 16
         y: 0
-        width: 25
-        height: 27
+        width: 16
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22eb60d888c068f30800000000000000
+      internalID: 4577359851889802786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luigi_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e7c84b397f0f780800000000000000
+      internalID: -8651142670417363386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luigi_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64fabd76abeeb9d0800000000000000
+      internalID: -2756506821597662097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luigi_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a5dc288993052a0800000000000000
+      internalID: -6750832514236065215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luigi_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 31
       alignment: 9
       pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,74 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6de5ef31205ebe94586a6e85cc1b3242
-      internalID: 536586457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spiny-spirtesheet_2
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 0
-        width: 25
-        height: 27
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97d1ae7832e1b7841b4c61e0a157a6d4
-      internalID: 1436614889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spiny-spirtesheet_3
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 0
-        width: 25
-        height: 27
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62c90777dae71bc46971e35cb6723271
-      internalID: 1822486614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spiny-spirtesheet_4
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 25
-        height: 27
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed250c6258f510544a6bde4f2bfe1e12
-      internalID: 114435285
+      spriteID: 45e35cdc2f165eb40b0abcceaf997932
+      internalID: -2010093876
       vertices: []
       indices: 
       edges: []
@@ -226,7 +260,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 278ef3c9d2c01e342afc0ba853fe3a8b
+    spriteID: b38ec07af9fec1743bc859927c56f96a
     internalID: 0
     vertices: []
     indices: 
@@ -236,13 +270,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":25.0,"y":27.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":31.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.10000000149011612},"autoSlicingMethod":0,"spriteAlignment":9,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      spiny-spirtesheet_0: -2035777783790491695
-      spiny-spirtesheet_1: 536586457
-      spiny-spirtesheet_2: 1436614889
-      spiny-spirtesheet_3: 1822486614
-      spiny-spirtesheet_4: 114435285
+      luigi_0: -2773065573728886917
+      luigi_1: 4577359851889802786
+      luigi_2: -8651142670417363386
+      luigi_3: -2756506821597662097
+      luigi_4: -6750832514236065215
+      luigi_5: -2010093876
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
