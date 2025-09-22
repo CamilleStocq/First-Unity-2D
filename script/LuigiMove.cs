@@ -18,7 +18,7 @@ public class LuigiMove : MonoBehaviour
     private Animator animator;
 
     private bool isJumping = false;
-    private bool goingDown = false; // exo
+    private bool isGoingDown = false;
 
     void Awake()
     {
@@ -26,21 +26,22 @@ public class LuigiMove : MonoBehaviour
         renderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        // boxCollider = GetComponent<BoxCollider2D>(); // exo
     }
 
     private void OnEnable()
     {
         actions.FindActionMap("Luigi").Enable();
         actions.FindActionMap("Luigi").FindAction("Jump").performed += OnJump;
-        actions.FindActionMap("Luigi").FindAction("Down").performed += GoDown; //exo
+        actions.FindActionMap("Luigi").FindAction("Down").performed += GoDown; 
+        actions.FindActionMap("Luigi").FindAction("Down").canceled += OnRise; 
     }
 
     private void OnDisable()
     {
         actions.FindActionMap("Luigi").Disable();
         actions.FindActionMap("Luigi").FindAction("Jump").performed -= OnJump;
-        actions.FindActionMap("Luigi").FindAction("Down").performed -= GoDown;//exo
+        actions.FindActionMap("Luigi").FindAction("Down").performed -= GoDown;
+        actions.FindActionMap("Luigi").FindAction("Down").canceled -= OnRise; 
     }
 
     void Update()
@@ -67,19 +68,23 @@ public class LuigiMove : MonoBehaviour
         }
     }
 
-    private void GoDown(InputAction.CallbackContext context) //exo
+    private void GoDown(InputAction.CallbackContext context)
     {
-        if (!goingDown)
-        {
-            animator.SetBool("GoDown", true);
-            goingDown = true;
-            // boxCollider.size = new Vector3(boxCollider.size.x, ySize);
-        }
+        isGoingDown = true;
+        animator.SetBool("GoDown", true);
+    }
+
+    private void OnRise(InputAction.CallbackContext context)
+    {
+        isGoingDown = false;
+        animator.SetBool("GoDown", false);
     }
 
     private void MoveX()
     {
         renderer.flipX = xAxis.ReadValue<float>() < 0;
+        // if (isGoingDown) return;  // permet de plus avancer quand on est accroupi
+
         animator.SetFloat("Speed", Mathf.Abs(xAxis.ReadValue<float>()));
         transform.Translate(xAxis.ReadValue<float>() * speed * Time.deltaTime, 0f, 0f);
     }
