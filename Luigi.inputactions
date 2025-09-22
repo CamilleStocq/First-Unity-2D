@@ -2,22 +2,31 @@
     "name": "Luigi",
     "maps": [
         {
-            "name": "LuigiWalk",
+            "name": "Luigi",
             "id": "5f484943-68d2-4b41-95e3-a509323ec5e4",
             "actions": [
                 {
-                    "name": "Left",
+                    "name": "xAxis",
+                    "type": "Value",
+                    "id": "245e003d-4116-4821-9831-fb124c69443d",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
                     "type": "Button",
-                    "id": "502f4b8e-1bd7-4f77-ad1b-e62949f9df70",
+                    "id": "e1039b77-19a4-4bc1-b375-cfe5234abcc9",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Right",
+                    "name": "Down",
                     "type": "Button",
-                    "id": "6e47944b-ebef-4f43-9280-758de26f0917",
+                    "id": "ee5fc2fd-933d-48af-a79d-f55c045c4f79",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -26,68 +35,79 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "1bb1f815-d4bf-463e-9f8a-1075a2a73afd",
-                    "path": "",
+                    "name": "1D Axis",
+                    "id": "3ccc21d1-5a40-47cb-b502-1fa747209a7f",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Left",
-                    "isComposite": false,
+                    "action": "xAxis",
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "17ce13e2-0c35-4bb3-9e41-886dbeb5e8a1",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Left",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9afa9107-7f07-45e6-afd7-923e3dcdf77a",
+                    "name": "negative",
+                    "id": "ccc8b875-55d9-4401-9576-16f3295b493f",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Left",
+                    "action": "xAxis",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "df2956de-0521-46f3-ae44-da069201cc89",
-                    "path": "",
+                    "name": "negative",
+                    "id": "35416851-bbfe-45b6-b3c9-f68b1212615e",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Right",
+                    "action": "xAxis",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "52acbec8-b010-4353-a387-71e0e8924251",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Right",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1202044e-e120-44a2-b84a-26d75960ad23",
+                    "name": "positive",
+                    "id": "d0c57b46-8135-4d9f-b1c5-278261e3f89a",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Right",
+                    "action": "xAxis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "f66f6559-3c9a-4a7e-8185-f2886303bfe9",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "xAxis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ba5ccf5c-2f32-4d4f-97d9-8fc2aee2f355",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2002cf12-297e-4b52-a64f-459b78d48a26",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Down",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
